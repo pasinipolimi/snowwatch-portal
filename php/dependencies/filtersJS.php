@@ -9,3 +9,6 @@
   <script src="libs/bootstrap-switch.js"></script>
   
   <script src="js/filters.js"></script>
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.tagsinput/0.4.2/bootstrap-tagsinput.css" />
+<script src="//cdn.jsdelivr.net/bootstrap.tagsinput/0.4.2/bootstrap-tagsinput.min.js"></script>
