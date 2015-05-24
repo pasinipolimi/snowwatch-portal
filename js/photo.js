@@ -52,7 +52,6 @@ function fillPhoto(photoDetails) {
         }
         
         var status=photoDetails.status;
-        status="NO_GPS";
         $.getJSON("status.json", function( data ) {
             $('#statusMessage').addClass("label-"+data.status[status].level);
             $('#statusMessage').append(data.status[status].message);
@@ -67,7 +66,7 @@ function fillPhoto(photoDetails) {
         } else {
             $('#viewRender').hide();
         }
-
+ 
         if(photoDetails.auxAlignment){
             $('#switch-peaks').bootstrapSwitch('disabled', false);
             $('#peaksdiv').click( function(){
@@ -138,14 +137,8 @@ function fillPhoto(photoDetails) {
                 $('#collapseInfo').collapse('hide');
             });
 
-            $('#imageid').mousemove(function() {
-                startImageX = $("#imageid").position().left;
-                startImageY = $("#imageid").position().top;
-                imageWidth = $("#imageid").width();
-                imageHeight = $("#imageid").height();
-                var message = "pippo "+ event.pageX+"  "+event.pageY;
-                $('#collapseInfoDiv').html(message);
-
+            $('#imageid').mousemove(function(event) {
+                showDepth(event);
             });
         }
 
@@ -192,7 +185,7 @@ function fillPhoto(photoDetails) {
         
 }
 
-function showDepth(event){
+function showDepthOld(event){
      
     startImageX = $("#imageid").position().left;
     startImageY = $("#imageid").position().top;
@@ -201,6 +194,15 @@ function showDepth(event){
     $('[data-toggle="popover"]').popover({
         content:"pippo "+ event.pageX+"  "+event.pageY
     });  
+}
+
+function showDepth(event){
+    startImageX = $("#imageid").position().left;
+    startImageY = $("#imageid").position().top;
+    imageWidth = $("#imageid").width();
+    imageHeight = $("#imageid").height();
+    var message = "pippo "+ event.pageX+"  "+event.pageY;
+    $('#collapseInfoDiv').html(message);
 }
 
 

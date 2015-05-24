@@ -173,7 +173,7 @@
                         <p><span class="glyphicon " id="source"></span></p>
                         <p><span class="glyphicon " id="type"></span></p>
                         
-                        <div id="mapInfo"><img id="mapImg" ></div>
+                        <div id="mapInfo"><img id="mapImg" class="img-responsive" ></div>
                     </div>
                 </div>
 
@@ -210,7 +210,7 @@
                                     Show Peaks:
                                 </div>
                                 <div class="row">
-                                    <input id="switch-peaks" type="checkbox" disabled  data-size="mini" data-on-text="ON" data-off-text="OFF" name="author-checkbox">
+                                    <input id="switch-peaks" type="checkbox"  disabled data-size="mini" data-on-text="ON" data-off-text="OFF" >
                                     <!--<input id="switch-peaks" type="checkbox" checked="" data-size="mini" data-on-text="ON" data-off-text="OFF" name="author-checkbox">-->
                                 </div>
                             </div>
@@ -219,7 +219,7 @@
                                     Snow Mask:
                                 </div>
                                 <div class="row">
-                                    <input id="switch-snow" type="checkbox" disabled data-size="mini" data-on-text="ON" data-off-text="OFF" name="author-checkbox">
+                                    <input id="switch-snow" type="checkbox" disabled data-size="mini" data-on-text="ON" data-off-text="OFF" >
                                 </div>
                             </div>         
                         </div>
