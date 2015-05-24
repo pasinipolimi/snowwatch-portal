@@ -1,0 +1,29 @@
+.preview img{
+	margin:2px
+	auto;background:white;
+	overflow:hidden;
+	width: 100px;
+	height: 100px;
+}
+
+.preview div{
+padding:0;
+margin:0;
+width:112px;
+height: 112px;
+display:inline;
+float:left;
+text-align:center;
+overflow:hidden
+background: url(blah.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
+}
+
+.preview div a{
+display:block;margin:0 auto;font-size:80%}
+
+.preview a {
+display: block;
+width: 20px;
+height: 20px;
+}
+

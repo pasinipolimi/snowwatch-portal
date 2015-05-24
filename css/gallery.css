@@ -1,0 +1,50 @@
+.preview img{
+	margin:2px
+	auto;
+	background:white;
+	overflow:hidden;
+	width: 100px;
+	height: 100px;
+}
+
+.preview div{
+padding:0;
+margin:0;
+width:112px;
+height: 112px;
+display:inline;
+float:left;
+text-align:center;
+overflow:hidden
+background:none;
+}
+
+
+.previewsmall img{
+	margin:2px
+	auto;
+	background:white;
+	overflow:hidden;
+	width: 65px;
+	height: 65px;
+}
+
+.previewsmall div{
+padding:0;
+margin:0;
+width:72px;
+height: 72px;
+display:inline;
+float:left;
+text-align:center;
+overflow:hidden;
+background:none;
+}
+
+.galleryContainer {
+	overflow: auto;
+}
+
+.bootstrap-switch .bootstrap-switch-handle-on, .bootstrap-switch .bootstrap-switch-handle-off, .bootstrap-switch .bootstrap-switch-label {
+	height: auto;
+}

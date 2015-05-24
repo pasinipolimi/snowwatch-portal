@@ -1,0 +1,137 @@
+ .warpingMatcher{
+ 	position:"relative";
+ 	overflow:"hidden";
+ 	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+ }
+
+ .warpingMatcher .component-images{
+ 	position: relative;
+ 	overflow: hidden;
+ }
+
+ .warpingMatcher .render-photo-container{
+ 	position: relative;
+ }
+
+
+
+ .warpingMatcher .image-render{
+  	position: absolute;
+ 	left:0;
+ 	top:0;
+ }
+
+
+.warpingMatcher .image-render-parent {
+	position: absolute;
+}
+
+.warpingMatcher .render-peak {
+	position: absolute;
+	opacity: 0.6;
+	width: 0px;
+	height: 0px;
+	margin-top: -12px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 15px solid #DF0000;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+ .warpingMatcher .image-render-thumb{
+ 	width: 100%;
+ 	max-height: 75px;
+ }
+
+ .warpingMatcher .image-photo{
+ 	position:relative;
+ 	max-width: 700px;
+ 	max-height: 560px;
+ }
+
+ .warpingMatcher .image-photo-mirror{
+ 	display:none;
+ 	position:relative;
+ }
+
+ .warpingMatcher .canvas-container{
+ 	display: inline-block;
+ 	position: absolute;
+ }
+
+ .warpingMatcher .drag-icon{
+	right:-22px;
+	top:-22px;
+	position:absolute;
+	width:40px;
+	height:40px;
+ }
+
+ .warpingMatcher .warper-canvas{
+ 	opacity:0.7;
+ }
+
+.warpingMatcher .component-images-thumb{
+	position: relative;
+	overflow: hidden;
+}
+.warpingMatcher .thumb-mask{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+.warpingMatcher .thumb-darker-bg {
+	height: 2000px;
+	top: -1000px;
+	position: relative;
+	width: 500px;
+	background: black;
+	opacity: 0.6;
+	float: left;
+	cursor: default;
+}
+
+.warpingMatcher .thumb-lighter-bg {
+	float: left;
+	width: 300px;
+	height: 100%;
+}
+.warpingMatcher.step1, .warpingMatcher.step2{
+	color: #969696;
+}
+
+.warpingMatcher.step1 .step1, .warpingMatcher.step2 .step2, .warpingMatcher.step3 .step3{
+	color: #000;
+}
+
+.warpingMatcher.step1 .step1 .step-index, .warpingMatcher.step2 .step2 .step-index, .warpingMatcher.step3 .step3 .step-index{
+	font-weight: bold;
+}
+
+.warpingMatcher .generate-coords, .warpingMatcher .pin-panorama, .warpingMatcher .reset{
+	display: none;
+}
+.warpingMatcher.step3 .generate-coords,.warpingMatcher.step2 .reset, .warpingMatcher.step3 .reset,.warpingMatcher.step1 .pin-panorama{
+	display: block;
+}
+
+.warpingMatcher.step1 .image-render, 
+.warpingMatcher.step1 .image-render-mirror,
+.warpingMatcher.step1 .thumb-mask,
+.warpingMatcher.step1 .thumb-lighter-bg,
+.warpingMatcher.step1 .canvas-container,
+.warpingMatcher.step1 .drag-icon{
+	cursor:-moz-grab;
+	cursor:-webkit-grab;
+}
+
+
+
+           

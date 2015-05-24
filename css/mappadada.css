@@ -1,0 +1,70 @@
+html, body {
+        	height: 100%;
+        	margin: 0px;
+        	padding: 0px;
+      	}
+      	#map-canvas {
+        	height: 100%;
+        	width: 100%;
+        	position: absolute;
+        	margin: 0px;
+        	padding: 0px;
+        	z-index: 0;
+      	}
+      	.bootstrap-switch .bootstrap-switch-handle-on, .bootstrap-switch .bootstrap-switch-handle-off, .bootstrap-switch .bootstrap-switch-label {
+  height: auto;
+}
+      	#imageDet {
+      		max-width: 400px;
+      	}
+      	#imageInfo {
+      		margin-left: 20px;
+      	}
+      	#highPeak {
+      		max-width: 100px;
+      	}
+      	verflow:hidden;
+      	}  
+        .thumbdiv_big {
+          
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
+          width:100px; 
+          height:100px;
+          z-index: 2;
+          border:2px solid #fff;
+        }
+        .thumbdiv_small {
+
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
+          width:40px; 
+          height:40px;
+          z-index: 1;
+          border:2px solid #fff;
+        } 
+
+
+        .wcicon
+        {
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
+          width:20px; 
+          height:20px;
+          z-index: 1;
+        }
+
+        .wcicon_big
+        {
+          width:20px; 
+          height:20px;
+        }
+
+        .wcicon_small
+        {
+          width:10px; 
+          height:10px;
+        }

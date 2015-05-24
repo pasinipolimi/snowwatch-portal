@@ -1,0 +1,51 @@
+{
+    "status": {
+        "INVALID": {
+            "message": "The photo has been classified as invalid, no analysis performed.",
+            "step": -1,
+            "level":"danger"
+        },
+        "JUST_CREATED": {
+            "message": "The photo has been successfully saved, Snowwatch is starting the processing",
+            "step": 0,
+            "level":"danger"
+        },
+        "NO_GPS": {
+            "message": "Unable to perform the alignment: Unable to automatically find the GPS coordinates. Please manually provide the GPS coordinates. ",
+            "step": 0,
+            "level":"danger"
+        },
+        "WAITING_RENDER": {
+            "message": "GPS found, waiting for render",
+            "step": 1,
+            "level":"info"
+        },
+        "NO_FOV":{
+            "message": "Unable to compute the fov, please align manually.",
+            "step": 2,
+            "level":"danger"
+        },
+        "WAITING_ALIGNMENT": {
+            "message": "Snowwatch is performing the alignment, please wait, or align manually.",
+            "step": 3,
+            "level":"info"
+        },
+        "NO_ALIGNMENT": {
+            "message": "Snowwatch couldnt align the photo, please align manually.",
+            "step": 4,
+            "level":"danger"
+        },
+        "ALIGNED": {
+            "message": "Snowwatch found an alignment, have a look.",
+            "step": 5,
+            "level":"success"
+        }
+    },
+    "steps_ROMAN_IGNORA_QUESTA_PARTE": [
+        "foto caricata e estrazione GPS",
+        "calcola il fov partendo dagli exif e dettagli modello amcchina",
+        "calcola il render con le coordinate e il fov",
+        "calcola l'allineamento",
+        "calcola la maschera di profondita"
+    ]
+}
